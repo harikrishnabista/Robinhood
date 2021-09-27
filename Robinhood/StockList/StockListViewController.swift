@@ -21,14 +21,6 @@ class StockListViewController: UIViewController {
         self.tableView.delegate = self
     }
     
-    @objc func appWillResingActive(){
-        print("appWillResingActive")
-    }
-    
-    @objc func appDidBecomeActive(){
-        print("appDidBecomeActive")
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.viewModel.fetchStockList(delegate: self)
@@ -76,6 +68,29 @@ extension StockListViewController : UITableViewDelegate {
             
             self.navigationController?.pushViewController(stockDetailViewController, animated: true)
         }
+    }
+}
+
+extension StockListViewController: AppDelegateListening {
+    
+    func applicationWillResignActive(_ application: UIApplication) {
+        self.viewModel.stopFetch()
+    }
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        
+    }
+    
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        self.viewModel.fetchStockList(delegate: self)
+    }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        
     }
 }
 

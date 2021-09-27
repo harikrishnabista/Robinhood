@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0B92E42701767700E569DA /* AppDelegateListening.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B92E32701767700E569DA /* AppDelegateListening.swift */; };
 		3F16B71926FCA7DE00F66700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16B71826FCA7DE00F66700 /* AppDelegate.swift */; };
 		3F16B71B26FCA7DE00F66700 /* StockListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16B71A26FCA7DE00F66700 /* StockListViewController.swift */; };
 		3F16B71E26FCA7DE00F66700 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F16B71C26FCA7DE00F66700 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F0B92E32701767700E569DA /* AppDelegateListening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateListening.swift; sourceTree = "<group>"; };
 		3F16B71526FCA7DE00F66700 /* Robinhood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Robinhood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F16B71826FCA7DE00F66700 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F16B71A26FCA7DE00F66700 /* StockListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		3F16B73A26FDEB3100F66700 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				3F0B92E32701767700E569DA /* AppDelegateListening.swift */,
 				3F16B72C26FCDDEC00F66700 /* ApiCaller.swift */,
 				3F16B72E26FD6F4400F66700 /* FetchStockPriceDataManager.swift */,
 			);
@@ -186,6 +189,7 @@
 				3F16B73926FDE70B00F66700 /* StockDetailViewModel.swift in Sources */,
 				3F16B72F26FD6F4400F66700 /* FetchStockPriceDataManager.swift in Sources */,
 				3F16B71926FCA7DE00F66700 /* AppDelegate.swift in Sources */,
+				3F0B92E42701767700E569DA /* AppDelegateListening.swift in Sources */,
 				3F16B72B26FCCE7C00F66700 /* StockListViewModel.swift in Sources */,
 				3F16B73326FDE27300F66700 /* HomeViewController.swift in Sources */,
 				3F16B72D26FCDDEC00F66700 /* ApiCaller.swift in Sources */,
